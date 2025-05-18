@@ -1,75 +1,112 @@
 # On Top Band Website
 
-Eine professionelle Website für die Hochzeits- und Eventband "On Top" aus dem Landkreis Pfaffenhofen/Ilm.
+Modern website for the On Top Band, built with modern web technologies and optimized for performance.
 
-## Projektstruktur
+## Features
+
+- 🎨 Modern, responsive design
+- 🚀 Fast loading with Vite
+- 💅 SCSS for styling
+- 📱 Mobile-first approach
+- ✨ Smooth animations with AOS
+- 🎭 Dynamic image galleries with Swiper
+- 🔍 SEO optimized
+- 📈 Performance optimized
+
+## Tech Stack
+
+- Vite - Build tool and development server
+- SCSS - For styling
+- AOS - Animate on scroll library
+- Swiper - Modern mobile touch slider
+- GitHub Pages - Hosting platform
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm (v7 or higher)
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/ontop-band-website.git
+   cd ontop-band-website
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start development server
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production
+   ```bash
+   npm run build
+   ```
+
+### Development
+
+The development server will start at `http://localhost:5173`. The site will automatically reload if you change any of the source files.
+
+### Deployment
+
+The website is automatically deployed to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow handles the build and deployment process.
+
+To deploy manually:
+
+1. Build the project
+   ```bash
+   npm run build
+   ```
+
+2. Push to GitHub
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+
+## Project Structure
 
 ```
 ontop-band-website/
-├── index.html
-├── styles.css
-├── script.js
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── src/
+│   ├── js/
+│   │   └── main.js
+│   └── styles/
+│       └── main.scss
 ├── images/
-│   ├── logo.svg
-│   ├── hero-bg.jpg
-│   ├── member1.jpg - member6.jpg
-│   └── gallery1.jpg - gallery6.jpg
+│   └── ...
+├── index.html
+├── vite.config.js
+├── package.json
 └── README.md
 ```
 
-## Installation
+## Contributing
 
-1. Laden Sie alle Dateien in Ihr Webhosting-Verzeichnis hoch.
-2. Stellen Sie sicher, dass Sie die folgenden Bilder im `images/` Verzeichnis haben:
-   - Ein Hero-Hintergrundbild (`hero-bg.jpg`)
-   - Fotos der Bandmitglieder (`member1.jpg` bis `member6.jpg`)
-   - Galerie-Bilder (`gallery1.jpg` bis `gallery6.jpg`)
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Anpassungen
+## License
 
-### Kontaktinformationen ändern
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-1. Öffnen Sie `index.html`
-2. Suchen Sie den Bereich mit der Klasse `contact-info`
-3. Aktualisieren Sie Telefonnummer, E-Mail und Social Media Links
+## Contact
 
-### Bandmitglieder ändern
+On Top Band - [Website](https://yourusername.github.io/ontop-band-website)
 
-1. Öffnen Sie `script.js`
-2. Suchen Sie das Array `bandMembers`
-3. Aktualisieren Sie die Informationen der Bandmitglieder
-
-### Repertoire anpassen
-
-1. Öffnen Sie `index.html`
-2. Suchen Sie den Bereich mit der Klasse `repertoire-categories`
-3. Passen Sie die Songlisten an
-
-## Technische Details
-
-- Die Website verwendet reines HTML, CSS und JavaScript
-- Keine externen Abhängigkeiten außer Font Awesome für Icons
-- Vollständig responsive für alle Bildschirmgrößen
-- SEO-optimiert
-- Schnelle Ladezeiten durch optimierte Ressourcen
-
-## SEO-Optimierung
-
-Die Website ist für folgende Keywords optimiert:
-- Hochzeitsband Pfaffenhofen
-- Eventband Pfaffenhofen
-- Liveband Hochzeit
-- Partyband Pfaffenhofen
-- On Top Band
-
-## Browser-Kompatibilität
-
-Die Website wurde getestet und funktioniert in:
-- Google Chrome (neueste Version)
-- Mozilla Firefox (neueste Version)
-- Safari (neueste Version)
-- Microsoft Edge (neueste Version)
-
-## Kontakt
-
-Bei Fragen oder Problemen wenden Sie sich bitte an den Website-Administrator. 
+Project Link: [https://github.com/yourusername/ontop-band-website](https://github.com/yourusername/ontop-band-website) 

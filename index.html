@@ -5,37 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="On Top - Ihre professionelle Hochzeits- und Eventband im Landkreis Pfaffenhofen/Ilm. Seit 1998 sorgen wir für unvergessliche musikalische Momente auf Ihrer Hochzeit.">
     <title>On Top - Hochzeits- & Eventband Pfaffenhofen</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+    <meta name="theme-color" content="#1a1a1a">
 </head>
 <body>
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <nav class="nav-container">
-            <div class="logo">On Top</div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="logo">
+                <img src="/images/logo.svg" alt="On Top Logo" width="120" height="40">
             </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#ueber-uns">Über Uns</a></li>
-                <li><a href="#band">Band</a></li>
-                <li><a href="#repertoire">Repertoire</a></li>
-                <li><a href="#media">Media</a></li>
-                <li><a href="#kontakt" class="cta-button">Kontakt</a></li>
+                <li><a href="#home" data-scroll>Home</a></li>
+                <li><a href="#ueber-uns" data-scroll>Über Uns</a></li>
+                <li><a href="#band" data-scroll>Band</a></li>
+                <li><a href="#repertoire" data-scroll>Repertoire</a></li>
+                <li><a href="#media" data-scroll>Media</a></li>
+                <li><a href="#kontakt" class="cta-button" data-scroll>Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <h1>Ihre perfekte Hochzeitsband in Pfaffenhofen</h1>
                 <p>Seit 1998 machen wir Ihre Feier zu einem unvergesslichen Erlebnis</p>
-                <a href="#kontakt" class="cta-button">Jetzt unverbindlich anfragen</a>
+                <a href="#kontakt" class="cta-button" data-scroll>Jetzt unverbindlich anfragen</a>
             </div>
+            <div class="hero-overlay"></div>
+            <video class="hero-video" autoplay muted loop playsinline poster="/images/hero-bg.jpg">
+                <source src="/videos/hero-video.mp4" type="video/mp4">
+            </video>
         </section>
 
         <!-- Über Uns Section -->
@@ -168,18 +177,20 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">On Top</div>
+                <div class="footer-logo">
+                    <img src="/images/logo.svg" alt="On Top Logo" width="120" height="40">
+                </div>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#ueber-uns">Über Uns</a>
-                    <a href="#band">Band</a>
-                    <a href="#repertoire">Repertoire</a>
-                    <a href="#media">Media</a>
-                    <a href="#kontakt">Kontakt</a>
+                    <a href="#home" data-scroll>Home</a>
+                    <a href="#ueber-uns" data-scroll>Über Uns</a>
+                    <a href="#band" data-scroll>Band</a>
+                    <a href="#repertoire" data-scroll>Repertoire</a>
+                    <a href="#media" data-scroll>Media</a>
+                    <a href="#kontakt" data-scroll>Kontakt</a>
                 </div>
                 <div class="footer-legal">
-                    <a href="#">Impressum</a>
-                    <a href="#">Datenschutz</a>
+                    <a href="/impressum">Impressum</a>
+                    <a href="/datenschutz">Datenschutz</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -188,6 +199,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 </body>
 </html> 
