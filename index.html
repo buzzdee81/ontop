@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="On Top - Ihre professionelle Hochzeits- und Eventband im Landkreis Pfaffenhofen/Ilm. Seit 1998 sorgen wir für unvergessliche musikalische Momente auf Ihrer Hochzeit.">
+    <title>On Top - Hochzeits- & Eventband Pfaffenhofen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">On Top</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ueber-uns">Über Uns</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#repertoire">Repertoire</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#kontakt" class="cta-button">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Ihre perfekte Hochzeitsband in Pfaffenhofen</h1>
+                <p>Seit 1998 machen wir Ihre Feier zu einem unvergesslichen Erlebnis</p>
+                <a href="#kontakt" class="cta-button">Jetzt unverbindlich anfragen</a>
+            </div>
+        </section>
+
+        <!-- Über Uns Section -->
+        <section id="ueber-uns" class="about">
+            <div class="container">
+                <h2>Über Uns</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Seit über 25 Jahren sind wir Ihre erste Wahl für hochwertige Live-Musik im Landkreis Pfaffenhofen/Ilm. Als sechsköpfige Band bringen wir mit unserem vielfältigen Repertoire aus den 70ern bis heute jeden Saal zum Beben.</p>
+                        <p>Unsere Spezialität: Wir machen Ihre Hochzeit zu einem musikalischen Highlight - vom romantischen Hochzeitstanz bis zur ausgelassenen Party.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h3>Vielfältiges Repertoire</h3>
+                            <p>Von Klassikern bis zu aktuellen Hits</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Erfahrung</h3>
+                            <p>Über 25 Jahre Bühnenerfahrung</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h3>Professionalität</h3>
+                            <p>Perfekter Service von A bis Z</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Band Section -->
+        <section id="band" class="band">
+            <div class="container">
+                <h2>Die Band</h2>
+                <div class="band-members">
+                    <!-- Bandmitglieder werden dynamisch per JavaScript eingefügt -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Repertoire Section -->
+        <section id="repertoire" class="repertoire">
+            <div class="container">
+                <h2>Unser Repertoire</h2>
+                <div class="repertoire-categories">
+                    <div class="category">
+                        <h3>Hochzeitstanz</h3>
+                        <ul class="song-list">
+                            <li>Perfect - Ed Sheeran</li>
+                            <li>All of Me - John Legend</li>
+                            <li>Can't Help Falling in Love - Elvis Presley</li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <h3>Party Hits</h3>
+                        <ul class="song-list">
+                            <li>Sweet Home Alabama - Lynyrd Skynyrd</li>
+                            <li>I Gotta Feeling - Black Eyed Peas</li>
+                            <li>Sweet Caroline - Neil Diamond</li>
+                        </ul>
+                    </div>
+                    <div class="category">
+                        <h3>Dinner Musik</h3>
+                        <ul class="song-list">
+                            <li>What a Wonderful World - Louis Armstrong</li>
+                            <li>The Way You Look Tonight - Frank Sinatra</li>
+                            <li>Fly Me To The Moon - Frank Sinatra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="media">
+            <div class="container">
+                <h2>Impressionen</h2>
+                <div class="media-gallery">
+                    <!-- Galerie wird dynamisch per JavaScript eingefügt -->
+                </div>
+                <div class="audio-samples">
+                    <h3>Hörproben</h3>
+                    <!-- Audio-Player werden dynamisch per JavaScript eingefügt -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section id="kontakt" class="contact">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="booking-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Ihre E-Mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="event-date" name="event-date" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Ihre Nachricht an uns"></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Anfrage senden</button>
+                        </form>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Direkter Kontakt</h3>
+                        <p><i class="fas fa-phone"></i> +49 (0) XXX XXXXXXX</p>
+                        <p><i class="fas fa-envelope"></i> info@ontop-band.de</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Landkreis Pfaffenhofen/Ilm</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">On Top</div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#ueber-uns">Über Uns</a>
+                    <a href="#band">Band</a>
+                    <a href="#repertoire">Repertoire</a>
+                    <a href="#media">Media</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Impressum</a>
+                    <a href="#">Datenschutz</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 On Top Band. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
